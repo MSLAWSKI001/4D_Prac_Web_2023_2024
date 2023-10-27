@@ -1,0 +1,54 @@
+*{
+    font-family: Helvetica;
+    margin: 0;
+}
+.header1,.header2{
+    background-color: rgb(146, 184, 112);
+    text-align: center;
+    width: 50%;
+    height: 170px;
+}
+.header1
+{
+    float: left;
+}
+.header2{
+    float: left;
+}
+nav,footer{
+    background-color: rgb(100, 61, 49);
+    color: white;
+    text-align: center;
+    height: 80px;
+    margin: 5px;
+    clear: both;
+}
+.glowny_lewy, .glowny_prawy{
+    background-color: rgb(146, 184, 112);
+    text-align: center;
+    width: 50%;
+    height: 450px;
+}
+.glowny_lewy{
+    float: left;
+}
+.glowny_prawy{
+    float: left;
+}
+#zamowienie{
+    padding-right: 30px;
+    padding-bottom: 120px;
+    font-size: 150%;
+    text-decoration: none;
+}
+table,td{
+    border: dashed green 2px;
+    padding: 30px;
+    margin: 20px;
+    border-collapse: collapse;
+    
+}
+h1{
+    letter-spacing: 20px;
+    font-size: 250%;
+}
