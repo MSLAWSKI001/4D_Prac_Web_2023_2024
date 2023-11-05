@@ -1,0 +1,50 @@
+* {
+    font-family: Verdana;
+}
+aside{
+    background-color: seagreen;
+    color: white;
+    line-height: 150px;
+    height: 260px;
+    font-size: 160%;
+}
+aside.lewy{
+    width: 75%;
+    float: left;
+   
+}
+aside.prawy{
+    width: 25%;
+    text-align: right;
+    float: right;
+    
+}
+main{
+    background-color: mintcream;
+    padding: 80px;
+}
+footer{
+    background-color: seagreen;
+    color: white;
+    width: 50%;
+    text-align: center;
+    float: right;
+}
+button,input{
+    margin-bottom: 20px;
+}
+img.w{
+    box-shadow:15px, dimgray ;
+}
+a.d{
+    background-color: mintcream;
+    color: seagreen;
+    padding: 15px;
+    line-height: 70px;   
+}
+footer.prawy{
+   float: right;
+}
+footer.lewy{
+    
+}
