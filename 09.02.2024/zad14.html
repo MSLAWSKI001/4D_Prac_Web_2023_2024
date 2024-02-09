@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>zad14</title>
+</head>
+<body>
+    <input onchange="oblicz()" id = "suwak" type="range" name="points" min="0" max="100">
+    <script>
+        function oblicz() {
+            var liczba = document.getElementById("suwak").value;
+            var wynikdiv = document.getElementById("opis").innerHTML = liczba;
+            
+        }
+        </script>
+        <div id="opis">
+            
+        </div>
+</body>
+</html>
