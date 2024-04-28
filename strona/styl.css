@@ -1,7 +1,50 @@
-#entityHealth{
-    width: 50%;
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
-#entityHealth::-webkit-progress-value{
-    background-color: red;
-    transition: width 0.5s ease;
+
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+button {
+    background: transparent; /* Ustawienie tła przycisku jako przezroczyste */
+    border: none; /* Usunięcie obramowania przycisku */
+    padding: 0; /* Usunięcie wewnętrznego odstępu przycisku */
+}
+
+button img {
+    width: 50%; /* Zmniejszenie szerokości obrazka na przycisku */
+    height: auto; /* Automatyczne dostosowanie wysokości obrazka */
+}
+
+#enemy-container {
+    position: absolute;
+    top: 70%; /* Umieść przeciwnika na środku wertykalnie */
+    left: 50%; /* Umieść przeciwnika na środku horyzontalnie */
+    transform: translate(-50%, -50%); /* Wycentruj element */
+    text-align: center; /* Wyśrodkuj tekst */
+}
+
+#entityHealth {
+    position: absolute; /* Ustawienie pozycji absolutnej */
+    top: -100px; /* Przesunięcie paska życia do góry nad przyciskiem */
+    left: 0; /* Pozostawienie na lewej krawędzi kontenera */
+    width: 100%; /* Ustawienie szerokości na 100% kontenera */
+    height: 20px; /* Ustawienie wysokości paska życia */
+    background-color: #ddd; /* Kolor tła paska życia */
+}
+
+#entityHealth::-webkit-progress-value {
+    background-color: rgb(247, 4, 4); /* Kolor paska życia wypełnienia */
+}
+#hp {
+    position: absolute; /* Ustawienie pozycji absolutnej */
+    top: -100px; /* Przesunięcie tekstu w górę nad paskiem życia */
+    left: 0; /* Ustawienie na lewej krawędzi paska życia */
+    margin-left: 5px; /* Dodatkowy margines z lewej strony */
 }
