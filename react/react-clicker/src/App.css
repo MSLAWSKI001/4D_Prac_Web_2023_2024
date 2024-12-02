@@ -1,0 +1,148 @@
+/* Main game container styling */
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* Space between header, main, and footer */
+  height: 100vh;
+  background-image: url('forest_backgrund.jpg');
+  background-size: cover; /* Make the background image cover the entire container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background from repeating */
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Header styling */
+.header {
+  text-align: center;
+  padding: 20px 0; /* Padding around the header */
+}
+
+.game-title {
+  font-size: 4rem; /* Increase the title size */
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* Main content styling */
+.main-content {
+  display: flex; /* Align main blocks side by side */
+  justify-content: space-around; /* Space between main blocks */
+  width: 100%; /* Full width */
+  max-width: 1200px; /* Limit the max width */
+  padding: 20px; /* Padding for main content */
+}
+
+/* Enemy container styling */
+.enemy-container {
+  border: 2px solid white;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  flex: 1; /* Allow to grow */
+  margin: 10px; /* Margin around enemy block */
+}
+
+/* Points container styling */
+.points-container {
+  border: 2px solid rgba(255, 255, 255, 0.5); /* Border around the points container */
+  border-radius: 15px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.1); /* Light background for contrast */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+  flex: 1; /* Allow to grow */
+  margin: 10px; /* Margin around points block */
+}
+
+/* Side menu for upgrades */
+.side-menu {
+  flex: 1; /* Allow to grow */
+  margin: 10px; /* Margin around side menu */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: space-between; /* Space between items */
+}
+
+/* Button container styling */
+.button-container {
+  display: flex;
+  flex-direction: column; /* Align buttons vertically */
+  align-items: center; /* Center the buttons */
+}
+
+/* Button styling */
+button {
+  background-color: #49a09d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Button hover effects */
+button:hover {
+  background-color: #76c7c0;
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+/* Footer styling */
+.footer {
+  width: 100%; /* Full width */
+  padding: 10px 0; /* Padding for the footer */
+}
+
+/* Progress bar in footer */
+.footer-progress-bar {
+  width: 100%; /* Full width */
+  height: 20px; /* Height of progress bar */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* HP bar styling */
+.hp-bar {
+  width: 100%;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #ddd;
+  margin: 10px 0;
+}
+
+/* Progress color based on health */
+.hp-bar::-webkit-progress-value {
+  background-color: #f00505; /* Color for remaining HP */
+  border-radius: 10px;
+}
+
+.hp-bar::-webkit-progress-background {
+  background-color: #f44336; /* Color for the empty part */
+  border-radius: 10px;
+}
+
+/* EXP bar styling */
+.exp-bar {
+  width: 100%;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #ddd;
+}
+
+/* Progress color for EXP */
+.exp-bar::-webkit-progress-value {
+  background-color: #76c7c0; /* Color for gained EXP */
+  border-radius: 10px;
+}
+
+.exp-bar::-webkit-progress-background {
+  background-color: #f44336; /* Color for the empty part */
+  border-radius: 10px;
+}
